@@ -46,11 +46,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/mas
 Button1:AddToolTip("Just For The Esp")
 
 
+local Slider1 = Section1:CreateSlider("FOV", 1,120,nil,true, function(Value)
+	workspace.CurrentCamera.FieldOfView = Value
+end)
+Slider1:AddToolTip("Field Of View")
+Slider1:SetValue(70)
+
+
+
 local Slider1 = Section1:CreateSlider("Gravity", 1,150,nil,true, function(Value)
 	workspace.Gravity = Value
 end)
 Slider1:AddToolTip("Sets The Gravity Lower The Less Gravity")
-Slider1:SetValue(150)
+Slider1:SetValue(90)
 
 
 local Slider1 = Section1:CreateSlider("JumpPower", 1,1000,nil,true, function(Value)
