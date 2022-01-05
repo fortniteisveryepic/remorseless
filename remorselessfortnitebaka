@@ -1,0 +1,82 @@
+local Config = {
+    WindowName = "finobehub.xyz",
+	Color = Color3.fromRGB(0,255,255),
+	Keybind = Enum.KeyCode.RightBracket
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BracketV3.lua"))()
+local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
+
+local Tab1 = Window:CreateTab("Remorseless")
+
+
+local Section1 = Tab1:CreateSection("Bypass")
+local Section2 = Tab1:CreateSection("Credits & Others")
+
+
+local Label1 = Section1:CreateLabel("Label 1")
+Label1:UpdateText("Aimlocks 200m (Not Perfect Btw Its A Lock)")
+-------------
+local Button1 = Section1:CreateButton("Aimlock", function()
+	       loadstring(game:HttpGet("https://pastebin.com/raw/HkeFMFMS"))()
+end)
+Button1:AddToolTip("HotKey: Right Click. Aimbots 200m Distance")
+
+local Label1 = Section1:CreateLabel("Label 1")
+Label1:UpdateText("HBE Only Works For Melee's")
+
+local Button1 = Section1:CreateButton("HBE Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Olmafdnv/Op-hbe/main/Hbe'), true))()
+end)
+Button1:AddToolTip("Only For Melees")
+
+local Label1 = Section1:CreateLabel("Label 1")
+Label1:UpdateText(";cfly and ;infjump to jump")
+
+local Button1 = Section1:CreateButton("Infinite Yield", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+Button1:AddToolTip("Use ;cfly And ;infjump (Without Gravity U Get Downed)")
+
+local Label1 = Section1:CreateLabel("Label 1")
+Label1:UpdateText("Just For Esp")
+
+local Button1 = Section1:CreateButton("Owlhub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()end)
+Button1:AddToolTip("Just For The Esp")
+
+
+local Slider1 = Section1:CreateSlider("Gravity", 1,150,nil,true, function(Value)
+	workspace.Gravity = Value
+end)
+Slider1:AddToolTip("Sets The Gravity Lower The Less Gravity")
+Slider1:SetValue(150)
+
+
+local Slider1 = Section1:CreateSlider("JumpPower", 1,1000,nil,true, function(Value)
+	local plr = game.Players.LocalPlayer
+
+plr.Character.Humanoid.JumpPower = Value  
+end)
+Slider1:AddToolTip("JumpPower Can Down You Btw")
+Slider1:SetValue(90)
+
+local Button1 = Section1:CreateButton("Invisible", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/8t5JkijL"))()
+end)
+Button1:AddToolTip("Get Somewhere where no one will find you first.")
+-------------
+--
+-- 
+
+local Label1 = Section2:CreateLabel("Label 1")
+Label1:UpdateText("Made By Finobe#7650")
+local Label1 = Section2:CreateLabel("Label 1")
+Label1:UpdateText("There Is Barely Anything In This Game To Script")
+local Button1 = Section2:CreateButton("Copy Discord", function()
+    settoclipboard("https://discord.gg/crimskid")
+end)
+Button1:AddToolTip("Join Our Discord For Cookie Drops And Giveaways")
+
+
+
